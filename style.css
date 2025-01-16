@@ -1,9 +1,17 @@
 *{
-    font-size: 1rem;
     font-style: italic;
+}
+
+p {
+    font-size: 1rem;
 }
 
 h1 {
     font-size: 2rem;
     font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+    /* background-color: red; */
 }
