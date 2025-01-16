@@ -23,5 +23,12 @@
     <p><code><strong>git branch -M "nameHere"</strong></code> : it will rename the name of branch</p>
     <p><code><strong>git push -u origin main</strong></code> : <br><br>Every first-time we need to use this command after that we will be able to use git push, here "main" is the name of the branch. -u option tells Git to set an upstream branch. It establishes a connection between your local branch and the remote branch, so Git knows where to push or pull changes from in the future. This is the default name for your remote repository. When you clone a repository, Git automatically names the remote repository origin. You can think of it as a shorthand for the URL of the remote repository (e.g., https://github.com/user/repository.git).</p>
     <p>We can push multiple branches using above given command</p>
+    <p><code><strong>git clone</strong></code> : to clone repository</p>
+    <p><code><strong>git fetch</strong></code> : download the latest changes from the remote repository, but it will not merge or modify your working directory. git fetch gives you the opportunity to inspect the fetched changes before merging them, which can be helpful for reviewing code or checking for potential merge conflicts. after we use this command we need to merge repo by using git merge command</p>
+    <p><code><strong>git pull</strong></code> : fetch changes from a remote repository and automatically merge them into your current branch, inshort git pull will auto mate task which is done by fetch and merge</p>
+    <p>whenever we use either of them commands we need to define name of the remote repository. something like <code>"origin main"</code></p>
+    <p>there is a rule in Git which is not to rewrite or modify history</p>
+    <p></p>
 </body>
+
 </html>
