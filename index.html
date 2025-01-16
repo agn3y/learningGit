@@ -31,10 +31,19 @@
     <p>whenever we use either of them commands we need to define name of the remote repository. something like <code>"origin main"</code></p>
     <p>there is a rule in Git which is not to rewrite or modify history</p>
     <p>when we have made a commit by accident or may be we sometime just want to revert the change which are not pushed on repository yet we can use <code><strong>git reset --hard "comitID"</strong></code>(here we need to enter the commit id which we want to go back to)</p>
-    <p>whenever we want to go back to preveous history we can use above given command</p>
-    <p>using <code><strong>--hard</strong></code></p>
+    <p><strong>{ * }use this when the commits are done on local and not yet pushed</strong></p>
+    <p>whenever we want to go back to preveous history we can use above given command with this three below given argument</p>
+    <p>using <code><strong>( --hard )</strong></code></p>
     <ul>
         <li>Inshort from git history commit will be deleted and also from the current working file to changes will be Undo and yeah it also deletes all the changes which are made but not staged or commited.</li>
+    </ul>
+    <p>using <code><strong>( --soft )</strong></code></p>
+    <ul>
+        <li>Inshort from git history commit will be deleted.However, don't make no changes in file aint dont remove the code (It does not touch your working directory) and It keeps the changes in the staging area </li>
+    </ul>
+    <p>using <code><strong>( --mixed )</strong></code>(this comes bydefault.Sso,we don't have to define it)</p>
+    <ul>
+        <li>Inshort from git history commit will be deleted and It does not touch your working directory, so any modified files remain as they are.However,It unstages any changes that were in the staging area (the index) after the specified commit, but keeps the changes in your working directory.</li>
     </ul>
 </body>
 
