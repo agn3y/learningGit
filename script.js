@@ -7,3 +7,13 @@ function print() {
     }
 }
 print();
+console.log('---------------------------------------');
+function noway() {
+    let number = 10;
+    let i = 1;  
+    while (i <= number) {  
+        console.log(i+' |');
+    }
+    i++;
+}
+noway()
