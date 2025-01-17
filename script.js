@@ -7,13 +7,15 @@ function print() {
     }
 }
 print();
+
 console.log('---------------------------------------');
-function noway() {
+
+function newMe() {
     let number = 10;
-    let i = 1;  
-    while (i <= number) {  
-        console.log(i+' |');
+    let i = 1;
+    while(i <= number){
+        console.log(i)
+        i++;
     }
-    i++;
+    return 0
 }
-noway()
