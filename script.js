@@ -6,4 +6,3 @@ function oneToten() {
         console.log(i);
     }
 }
-oneToten()
