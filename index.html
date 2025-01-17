@@ -65,6 +65,12 @@
     <p><code><strong>git stash -m "message"</strong></code> : will stash the changes and you can also create a message to remember</p>
     <p><code><strong>git stash list</strong></code> : list of your stashed changes in Git</p>
     <p><code><strong>git stash show -p stash@{ID}</strong></code> : If you want more detailed information about the contents of a particular stash</p>
+    <p><code><strong>git stash apply</strong></code> : To apply the most recent stash without removing it from the stash list</p>
+    <p><code><strong>git stash apply stash@{1}</strong></code> : If you want to apply a specific stash</p>
+    <p><code><strong>git stash pop</strong></code> : If you want to apply the most recent stash and remove it from the stash list</p>
+    <p><code><strong>git stash pop stash@{1}</strong></code> : To pop a specific stash</p>
+    <p><code><strong>git stash clear</strong></code> : If you want to delete all stashes</p>
+    <p><code><strong>git stash drop stash@{0}</strong></code> : you can delete a specific stash in Git</p>
     <h3>Using git clone ?</h3>
     <p>when you clone a repository, Git will by default check out only the default branch, which is typically called main or master. However, it fetches all branches from the remote repository, but it only checks out the default branch locally.</p>
     <h3>To see and switch to other branches:</h3>
