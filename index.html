@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Git and Github</h1>
-    <p><code><strong>git add</strong></code> : to add files to stagging</p>
+    <p><code><strong>git add .</strong></code> : add changes to staging area</p>
+    <p><code><strong>git restore --staged</strong></code> : to unstage the changes</p>
     <p><code><strong>git commit -m "message here"</strong></code>: to commit the change with a detailed text message</p>
     <p><code><strong>git log</strong></code> : to see log of current branch</p>
     <p><code><strong>git log --all</strong></code> : to see log of whole repository</p>
@@ -95,6 +96,14 @@
     <p>Step 1: we have to tell to git to stop tracking it and to do that use - <code><strong> git rm --cached "fileName"</strong></code></p>
     <p>for directory we can use <code><strong>git rm --cached -r "directoryName/"</strong></code></p>
     <p>after that commit and push the change</p>
+    <h2>Advance Commands</h2>
+    <p><code><strong>git commit -am "message"</strong></code> : stages and commits the changes to tracked files</p>
+    <p><code><strong>git check "commitID" "fileName"</strong></code> : when you accidentally deleted a file and pushed it also this is the way you can get that file back</p>
+    <p><code><strong>git config --global -e</strong></code> : to open global config file</p>
+    <p><code><strong>git switch -C "branchName"</strong></code> : it will directly create a branch and switch into it</p>
+    <p><code><strong>git revert <commitId> -m 1</strong></code> : is used to undo a merge commit.</p>
+    <p><code><strong>-m 1</strong></code> : specifies that you want to keep the first parent of the merge as the mainline.</p>
+    <p>This reverts the merge commit abc123 and keeps the first parent (usually the branch you merged into).</p>
 </body>
 
 </html>
