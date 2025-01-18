@@ -17,6 +17,10 @@
     <p><code><strong>git branch</strong></code> : to see list of branch and currently working branch</p> 
     <p><code><strong>git branch "nameHere"</strong></code>: to create new branch</p> 
     <p><code><strong>git branch --delete branch-name</strong></code> : to delete branch</p>
+    <p><code><strong>git branch -D branch-name</strong></code> : force-delete the branch</p>
+    <p><code><strong>git push origin --delete forSecondAcc</strong></code> : To delete a remote branch</p>
+    <p>incase we deleted branch on remote but locally when we use <code><strong>git branch -r</strong></code> : it will still show us on local inorder to rid of use <code><strong>git branch -D --remote origin/branchName</strong></code> it will remove it</p>
+    <p>when there are multiple repo at local and we want to jump from one to another <code><strong>git remote set-url origin https://github.com/agn3y/learningGit.git</strong></code></p>
     <p><code><strong>git checkout</strong></code> : to switch branch (multiple use but let's just keep this one for right now)</p>
     <p><code><strong>git merge "branchName"</strong></code> : go to the branch where you want to merge the code with and use comand</p>
     <p><code><strong>git merge --abort</strong></code> : to abort merge operation</p>
