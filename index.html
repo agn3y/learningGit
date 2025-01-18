@@ -87,6 +87,10 @@
     <p>A .gitignore file is a special file in a Git repository that tells Git which files or directories to ignore when you are staging, committing, or pushing changes to a repository. Essentially, it prevents certain files from being tracked by Git.</p>
     <p>whenever we add any file or folder in gitignore file git stop tracking it and commiting it</p>
     <p>remember not to push node-modules folder when we use node or npm</p>
+    <p>Now suppose there is a file which is there from a long time and it is there before we created <code><strong>.gitignore</strong></code> file so if we directly add that old file to gitignore file it will still be tracked by git so how can we make it stop tracking ? for such cases we have to follow below cases :</p>
+    <p>Step 1: we have to tell to git to stop tracking it and to do that use - <code><strong> git rm --cached "fileName"</strong></code></p>
+    <p>for directory we can use <code><strong>git rm --cached -r "directoryName/"</strong></code></p>
+    <p>after that commit and push the change</p>
 </body>
 
 </html>
